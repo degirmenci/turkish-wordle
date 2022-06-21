@@ -36,7 +36,9 @@ export const getGuessStatuses = (
   guess: string
 ): CharStatus[] => {
   const splitSolution = unicodeSplit(solution)
+  console.log("solution " + solution + ', ' + splitSolution);
   const splitGuess = unicodeSplit(guess)
+  console.log("guess " + guess + ', ' + splitGuess);
 
   const solutionCharsTaken = splitSolution.map((_) => false)
 
